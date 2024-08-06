@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="rmd_x12_150_mock"> 
+  <link name="base_link" />
+
+  <joint name="base_link_to_chassis" type="fixed">
+    <parent link="base_link"/>
+    <child link="link_outer_x12_150_1"/>
+  </joint>
+  <link name="link_inner_x12_150_1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="./meshes/inner_x12_150_1.stl" />
+        </geometry>
+      <material name="link_inner_x12_150_1_material">
+        <color rgba="0.23137255 0.38039216 0.70588235 1" />
+        </material>
+      </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="./meshes/inner_x12_150_1.stl" />
+        </geometry>
+      </collision>
+    <inertial>
+      <mass value="0.1494739" />
+      <inertia ixx="4.1852816e-05" iyy="4.1852816e-05" izz="7.1701209e-05" ixy="0" ixz="0" iyz="0" />
+      <origin xyz="0 0 -0.010858971" rpy="3.1415927 0 0" />
+      </inertial>
+    </link>
+  <link name="link_outer_x12_150_1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="./meshes/outer_x12_150_1.stl" />
+        </geometry>
+      <material name="link_outer_x12_150_1_material">
+        <color rgba="0.64705882 0.64705882 0.64705882 1" />
+        </material>
+      </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="./meshes/outer_x12_150_1.stl" />
+        </geometry>
+      </collision>
+    <inertial>
+      <mass value="1.1505225" />
+      <inertia ixx="0.0013578926" iyy="0.0021889818" izz="0.0013275542" ixy="0" ixz="0" iyz="0" />
+      <origin xyz="0 0 0" rpy="-2.4503265 -1.5698733 -2.2621132" />
+      </inertial>
+    </link>
+  <joint name="joint_dof_x12" type="revolute">
+    <origin xyz="1.5243254e-05 -0.0086023019 0" rpy="-1.5707963 0 0" />
+    <parent link="link_outer_x12_150_1" />
+    <child link="link_inner_x12_150_1" />
+    <limit effort="80" velocity="5" lower="-4.712389" upper="4.712389" />
+    <axis xyz="0 0 -1" />
+    </joint>
+  </robot>

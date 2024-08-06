@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="first3links5.SLDASM">
+  <link name="world"></link>
+  <joint name="floating_base_joint" type="floating">
+    <parent link="world"/>
+    <child link="Hip Part 1"/>
+  </joint>
+  <link
+    name="Hip Part 1">
+    <inertial>
+      <origin
+        xyz="-0.112820540366583 0.103932286888556 0.400779775663237"
+        rpy="0 0 0" />
+      <mass
+        value="0.741275503444394" />
+      <inertia
+        ixx="0.00276479318877344"
+        ixy="0.000368641783125821"
+        ixz="-0.000678871558410122"
+        iyy="0.00213374011417088"
+        iyz="-0.000304374042291666"
+        izz="0.00248091124729039" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Hip Part 1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 0.5" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Hip Part 1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Hip pitch motor outer">
+    <inertial>
+      <origin
+        xyz="-5.25258669531459E-06 -0.031602301919343 1.43388676443479E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.595660024083284" />
+      <inertia
+        ixx="0.000688610322747581"
+        ixy="-9.26039730028889E-08"
+        ixz="-4.32117135975909E-06"
+        iyy="0.00113330157177616"
+        iyz="2.52796610396649E-07"
+        izz="0.000701726059424541" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Hip pitch motor outer.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Hip pitch motor outer.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Hip pitch motor outer"
+    type="fixed">
+    <origin
+      xyz="-0.17878 0.081301 0.40184"
+      rpy="0.84816 0.059345 2.1183" />
+    <parent
+      link="Hip Part 1" />
+    <child
+      link="Hip pitch motor outer" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Hip pitch motor inner">
+    <inertial>
+      <origin
+        xyz="2.60902410786912E-15 -0.0121410289179674 -3.96904731303493E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.0672931502593425" />
+      <inertia
+        ixx="1.88421375460619E-05"
+        ixy="-2.01593841446523E-19"
+        ixz="-2.11758236813575E-21"
+        iyy="3.22798842131266E-05"
+        iyz="-2.55803950070799E-19"
+        izz="1.88421375460619E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Hip pitch motor inner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Hip pitch motor inner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Hip pitch motor inner"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Hip pitch motor outer" />
+    <child
+      link="Hip pitch motor inner" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Hip Yaw">
+    <inertial>
+      <origin
+        xyz="0.0120619752374951 0.0638115269841176 -0.00051831362941504"
+        rpy="0 0 0" />
+      <mass
+        value="0.658027666053" />
+      <inertia
+        ixx="0.00277820257464213"
+        ixy="-9.75985448804177E-05"
+        ixz="-7.33382285987615E-06"
+        iyy="0.00139966144338352"
+        iyz="-2.64698296771595E-05"
+        izz="0.00195865346293585" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Hip Yaw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Hip Yaw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Hip Yaw"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Hip pitch motor inner" />
+    <child
+      link="Hip Yaw" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Hip Yaw motor outer">
+    <inertial>
+      <origin
+        xyz="5.55111512312578E-17 0.00924294771546275 -5.55111512312578E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.328670052016147" />
+      <inertia
+        ixx="0.000317459182853272"
+        ixy="2.57498015965307E-19"
+        ixz="1.25360876193636E-19"
+        iyy="0.000505904500163356"
+        iyz="-3.11708124589583E-19"
+        izz="0.000305337859651403" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Hip Yaw motor outer.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Hip Yaw motor outer.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Hip Yaw motor outer"
+    type="fixed">
+    <origin
+      xyz="0.0171499999999972 0.0784999999999992 0"
+      rpy="1.5707963267949 1.5707963267949 0" />
+    <parent
+      link="Hip Yaw" />
+    <child
+      link="Hip Yaw motor outer" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Hip yaw motor inner">
+    <inertial>
+      <origin
+        xyz="1.0547118733939E-15 0.0283223407944125 -3.60822483003176E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.0918022748743478" />
+      <inertia
+        ixx="3.34428943026208E-05"
+        ixy="-8.87690528722507E-19"
+        ixz="-2.11758236813575E-21"
+        iyy="5.93141739539544E-05"
+        iyz="9.97381295391939E-19"
+        izz="3.34428943026208E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Hip yaw motor inner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Hip yaw motor inner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Hip yaw motor inner"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-3.1416 1.0074 3.1416" />
+    <parent
+      link="Hip Yaw motor outer" />
+    <child
+      link="Hip yaw motor inner" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Leg part 1">
+    <inertial>
+      <origin
+        xyz="0.0760084684262597 0.0228490730772972 1.62919071011736E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.540915051298542" />
+      <inertia
+        ixx="0.00123063214283884"
+        ixy="0.000272316422423419"
+        ixz="-1.61613828209332E-10"
+        iyy="0.00142286241966032"
+        iyz="-3.93438405335914E-10"
+        izz="0.00111148936319682" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Leg part 1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Leg part 1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Leg part 1"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="3.14159265358979 -1.04719755119606 -3.14159265358979" />
+    <parent
+      link="Hip yaw motor inner" />
+    <child
+      link="Leg part 1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Leg part 2">
+    <inertial>
+      <origin
+        xyz="0.0578255555727301 -0.0450354041828799 2.10797886368574E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.262745719753957" />
+      <inertia
+        ixx="0.000243571020451167"
+        ixy="8.33501809311488E-07"
+        ixz="-1.92085126315055E-10"
+        iyy="0.000731108444438353"
+        iyz="1.67355344439881E-10"
+        izz="0.000504635321305178" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Leg part 2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Leg part 2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Leg part 2"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Leg part 1" />
+    <child
+      link="Leg part 2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Roll motor">
+    <inertial>
+      <origin
+        xyz="0 0.0092429477154627 -5.55111512312578E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.328670052016147" />
+      <inertia
+        ixx="0.000317459182853272"
+        ixy="-2.03287907341032E-20"
+        ixz="5.42101086242752E-20"
+        iyy="0.000505904500163356"
+        iyz="-1.49077798716757E-19"
+        izz="0.000305337859651403" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Roll motor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Roll motor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Roll motor"
+    type="fixed">
+    <origin
+      xyz="0.120700000000004 0.0171499999999935 0"
+      rpy="-1.63973684970919 1.57079631189374 3.07362698024244" />
+    <parent
+      link="Leg part 1" />
+    <child
+      link="Roll motor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Roll Motor inner">
+    <inertial>
+      <origin
+        xyz="1.52655665885959E-15 0.0283223407944095 -1.16573417585641E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.0918022748743475" />
+      <inertia
+        ixx="3.34428943026207E-05"
+        ixy="1.35525271560688E-20"
+        ixz="-1.6940658945086E-21"
+        iyy="5.93141739539541E-05"
+        iyz="-1.60406864386283E-18"
+        izz="3.34428943026207E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Roll Motor inner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Roll Motor inner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Roll Motor inner"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="3.1416 1.4275 3.1416" />
+    <parent
+      link="Roll motor" />
+    <child
+      link="Roll Motor inner" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Leg Part 3">
+    <inertial>
+      <origin
+        xyz="-0.0174753332909793 0.103502972859315 0.00123768702504005"
+        rpy="0 0 0" />
+      <mass
+        value="0.816474054918522" />
+      <inertia
+        ixx="0.00374492538479917"
+        ixy="0.00015329017896739"
+        ixz="-1.99783782687881E-06"
+        iyy="0.00235393040899868"
+        iyz="8.31112350352314E-05"
+        izz="0.00202320300841783" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Leg Part 3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://first3links5.SLDASM/meshes/Leg Part 3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Leg Part 3"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="-0.000162813414386833 1.57079630572147 0.00163025613643325" />
+    <parent
+      link="Roll Motor inner" />
+    <child
+      link="Leg Part 3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="assembly_1">
+  <link name="world"></link>
+  <joint name="floating_base_joint" type="floating">
+    <parent link="world"/>
+    <child link="link_part_1_1"/>
+  <link name="link_part_1_1">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="./meshes/part_1_1.stl" />
+        </geometry>
+      <material name="link_part_1_1_material">
+        <color rgba="0.61568627 0.81176471 0.92941176 1" />
+        </material>
+      </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="./meshes/part_1_1.stl" />
+        </geometry>
+      </collision>
+    <inertial>
+      <mass value="0.001" />
+      <inertia ixx="1.6666667e-06" iyy="1.6666667e-06" izz="1.6666667e-06" ixy="0" ixz="0" iyz="0" />
+      <origin xyz="0 0 0" rpy="3.1415927 0 3.1415927" />
+      </inertial>
+    </link>
+  </robot>

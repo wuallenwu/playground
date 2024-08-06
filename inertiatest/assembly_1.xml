@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mujoco model="assembly_1">
+  <compiler angle="radian" meshdir="meshes" />
+  <asset>
+    <mesh name="part_1_1" file="part_1_1.stl" />
+  </asset>
+  <worldbody>
+    <body name="root" pos="0 0 0" quat="1 0 0 0"><geom type="mesh" rgba="0.615686 0.811765 0.929412 1" mesh="part_1_1" />
+  </body></worldbody>
+</mujoco>

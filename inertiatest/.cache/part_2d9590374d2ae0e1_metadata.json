@@ -1,0 +1,154 @@
+{
+  "jsonType": "metadata-part",
+  "isMesh": false,
+  "partId": "JHD",
+  "isFlattenedBody": false,
+  "partType": "solid",
+  "meshState": 0,
+  "properties": [
+    {
+      "name": "Appearance",
+      "value": {
+        "color": {
+          "red": 157,
+          "green": 207,
+          "blue": 237
+        },
+        "isGenerated": true,
+        "opacity": 255
+      }
+    },
+    {
+      "name": "Name",
+      "value": "Part 1"
+    },
+    {
+      "name": "Description",
+      "value": null
+    },
+    {
+      "name": "Category",
+      "value": [
+        {
+          "memberCategoryIds": [
+            "5877a03ebe4c21163b49dce2"
+          ],
+          "memberCategories": [
+            {
+              "ownerType": 2,
+              "description": "Category created by upgrade",
+              "ownerId": "556f3109e4b00b3fee9a3f4a",
+              "publishState": 1,
+              "defaultObjectType": 2,
+              "objectTypes": [
+                2
+              ],
+              "name": "Onshape Part",
+              "id": "5877a03ebe4c21163b49dce2",
+              "href": null
+            }
+          ],
+          "ownerType": 1,
+          "description": "Default category for object type Part",
+          "ownerId": "65a33ca766b95a21beacf364",
+          "publishState": 1,
+          "defaultObjectType": 2,
+          "objectTypes": [
+            2
+          ],
+          "name": "Part",
+          "id": "65a33ca866b95a21beacf3b3",
+          "href": null
+        }
+      ]
+    },
+    {
+      "name": "Part number",
+      "value": null
+    },
+    {
+      "name": "Revision",
+      "value": null
+    },
+    {
+      "name": "State",
+      "value": "0"
+    },
+    {
+      "name": "Vendor",
+      "value": null
+    },
+    {
+      "name": "Project",
+      "value": null
+    },
+    {
+      "name": "Product line",
+      "value": null
+    },
+    {
+      "name": "Material",
+      "value": {
+        "properties": [
+          {
+            "name": "DENS",
+            "value": "1",
+            "type": "",
+            "displayName": "Density",
+            "units": "kg/m^3",
+            "category": "",
+            "description": ""
+          }
+        ],
+        "id": "CustomMaterial",
+        "displayName": "fake",
+        "libraryName": ""
+      }
+    },
+    {
+      "name": "Title 1",
+      "value": null
+    },
+    {
+      "name": "Title 2",
+      "value": null
+    },
+    {
+      "name": "Title 3",
+      "value": null
+    },
+    {
+      "name": "Not revision managed",
+      "value": false
+    },
+    {
+      "name": "Exclude from all BOMs",
+      "value": false
+    },
+    {
+      "name": "Unit of measure",
+      "value": "Each"
+    },
+    {
+      "name": "Mass",
+      "value": {
+        "formattedValue": "0.001 kg",
+        "computed": 0.0010000000000000002,
+        "useOverride": false
+      }
+    },
+    {
+      "name": "Center of mass",
+      "value": null
+    },
+    {
+      "name": "Inertia",
+      "value": null
+    },
+    {
+      "name": "Tessellation quality",
+      "value": "0"
+    }
+  ],
+  "href": "https://cad.onshape.com/api/metadata/d/15d23334264e13ddb5fed32a/m/ebb1ee4332c72057334b68ed/e/a90fb7fc14b6f100e70a9cc3/p/JHD?configuration=default"
+}

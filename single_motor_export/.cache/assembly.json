@@ -1,0 +1,244 @@
+{
+  "rootAssembly": {
+    "occurrences": [
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          1.0,
+          0.0,
+          0.0,
+          -0.0021527035807329536,
+          0.0,
+          -1.0,
+          0.0,
+          0.048590542881956605,
+          0.0,
+          0.0,
+          -1.0,
+          0.124,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MN4BDuQdCoQELOWZT"
+        ]
+      },
+      {
+        "hidden": false,
+        "fixed": false,
+        "transform": [
+          1.0,
+          0.0,
+          0.0,
+          -0.0021527035807329554,
+          0.0,
+          -1.0,
+          0.0,
+          0.048590542881956605,
+          0.0,
+          0.0,
+          -1.0,
+          0.124,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "path": [
+          "MlXjvehRdY7r/s6xx"
+        ]
+      }
+    ],
+    "instances": [
+      {
+        "name": "Outer X12 150 <1>",
+        "suppressed": false,
+        "id": "MlXjvehRdY7r/s6xx",
+        "fullConfiguration": "default",
+        "configuration": "default",
+        "documentMicroversion": "57e047c940b3c06f1dc0b5c3",
+        "documentId": "daff49ebfb5d1c43c2d8b6eb",
+        "elementId": "24710ad4ebae4ee5fbcdb83a",
+        "type": "Part",
+        "isStandardContent": false,
+        "partId": "JND"
+      },
+      {
+        "name": "Inner X12 150 <1>",
+        "suppressed": false,
+        "id": "MN4BDuQdCoQELOWZT",
+        "fullConfiguration": "default",
+        "configuration": "default",
+        "documentMicroversion": "57e047c940b3c06f1dc0b5c3",
+        "documentId": "daff49ebfb5d1c43c2d8b6eb",
+        "elementId": "24710ad4ebae4ee5fbcdb83a",
+        "type": "Part",
+        "isStandardContent": false,
+        "partId": "JwD"
+      }
+    ],
+    "patterns": [],
+    "features": [
+      {
+        "id": "ME54sWyZheOE2tBug",
+        "suppressed": true,
+        "featureType": "mate",
+        "featureData": {
+          "mateType": "FASTENED",
+          "matedEntities": [
+            {
+              "matedOccurrence": [
+                "MlXjvehRdY7r/s6xx"
+              ],
+              "matedCS": {
+                "xAxis": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "yAxis": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "zAxis": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "origin": [
+                  0.0021527035807329554,
+                  0.048590542881956605,
+                  0.124
+                ]
+              }
+            },
+            {
+              "matedOccurrence": [],
+              "matedCS": {
+                "xAxis": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "yAxis": [
+                  0.0,
+                  0.0,
+                  1.0
+                ],
+                "zAxis": [
+                  -0.0,
+                  -1.0,
+                  -0.0
+                ],
+                "origin": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          ],
+          "name": "Fastened 1"
+        }
+      },
+      {
+        "id": "MpquINd+UBuS64rxS",
+        "suppressed": false,
+        "featureType": "mate",
+        "featureData": {
+          "mateType": "REVOLUTE",
+          "matedEntities": [
+            {
+              "matedOccurrence": [
+                "MN4BDuQdCoQELOWZT"
+              ],
+              "matedCS": {
+                "xAxis": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "yAxis": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "zAxis": [
+                  0.0,
+                  1.0,
+                  0.0
+                ],
+                "origin": [
+                  0.002152703580733417,
+                  0.007490542881956618,
+                  0.12399999999999983
+                ]
+              }
+            },
+            {
+              "matedOccurrence": [
+                "MlXjvehRdY7r/s6xx"
+              ],
+              "matedCS": {
+                "xAxis": [
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "yAxis": [
+                  0.0,
+                  0.0,
+                  -1.0
+                ],
+                "zAxis": [
+                  -0.0,
+                  1.0,
+                  -0.0
+                ],
+                "origin": [
+                  0.002152703580733417,
+                  0.007490542881956618,
+                  0.12399999999999983
+                ]
+              }
+            }
+          ],
+          "name": "DOF X12"
+        }
+      }
+    ],
+    "fullConfiguration": "maxRotation=4.71238898038469+radian;minRotation=-4.71238898038469+radian",
+    "configuration": "default",
+    "documentMicroversion": "57e047c940b3c06f1dc0b5c3",
+    "documentId": "daff49ebfb5d1c43c2d8b6eb",
+    "elementId": "db5b8cbcd39279a6df833810"
+  },
+  "subAssemblies": [],
+  "parts": [
+    {
+      "isStandardContent": false,
+      "partId": "JND",
+      "bodyType": "solid",
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "57e047c940b3c06f1dc0b5c3",
+      "documentId": "daff49ebfb5d1c43c2d8b6eb",
+      "elementId": "24710ad4ebae4ee5fbcdb83a"
+    },
+    {
+      "isStandardContent": false,
+      "partId": "JwD",
+      "bodyType": "solid",
+      "fullConfiguration": "default",
+      "configuration": "default",
+      "documentMicroversion": "57e047c940b3c06f1dc0b5c3",
+      "documentId": "daff49ebfb5d1c43c2d8b6eb",
+      "elementId": "24710ad4ebae4ee5fbcdb83a"
+    }
+  ],
+  "partStudioFeatures": []
+}

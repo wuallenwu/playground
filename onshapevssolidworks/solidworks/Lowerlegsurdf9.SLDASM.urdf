@@ -1,0 +1,2492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Lowerlegsurdf9.SLDASM">
+  <link
+    name="Hip Part 1">
+    <inertial>
+      <origin
+        xyz="-0.112820540366583 0.103932286888556 0.400779775663237"
+        rpy="0 0 0" />
+      <mass
+        value="0.741275503444393" />
+      <inertia
+        ixx="0.00276479318877344"
+        ixy="0.000368641783125821"
+        ixz="-0.000678871558410122"
+        iyy="0.00213374011417088"
+        iyz="-0.000304374042291665"
+        izz="0.00248091124729038" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Hip Part 1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 0.5" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Hip Part 1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Hip pitch motor outer">
+    <inertial>
+      <origin
+        xyz="-5.25258669528683E-06 -0.031602301919343 1.43388676442924E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.595660024083284" />
+      <inertia
+        ixx="0.000688610322747581"
+        ixy="-9.26039730030109E-08"
+        ixz="-4.32117135975907E-06"
+        iyy="0.00113330157177616"
+        iyz="2.52796610396758E-07"
+        izz="0.000701726059424541" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Hip pitch motor outer.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Hip pitch motor outer.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Hip pitch motor outer"
+    type="fixed">
+    <origin
+      xyz="-0.178779379854561 0.0813013603931322 0.401842947548458"
+      rpy="0.848163596963594 0.059345183761508 2.11831143687906" />
+    <parent
+      link="Hip Part 1" />
+    <child
+      link="Hip pitch motor outer" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Hip pitch motor inner">
+    <inertial>
+      <origin
+        xyz="2.60902410786912E-15 -0.0121410289179674 -3.96904731303493E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.0672931502593425" />
+      <inertia
+        ixx="1.88421375460619E-05"
+        ixy="-2.01593841446523E-19"
+        ixz="-2.11758236813575E-21"
+        iyy="3.22798842131266E-05"
+        iyz="-2.55803950070799E-19"
+        izz="1.88421375460619E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Hip pitch motor inner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Hip pitch motor inner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Hip pitch motor inner"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Hip pitch motor outer" />
+    <child
+      link="Hip pitch motor inner" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Hip Yaw">
+    <inertial>
+      <origin
+        xyz="0.0120619752374951 0.0638115269841176 -0.00051831362941504"
+        rpy="0 0 0" />
+      <mass
+        value="0.658027666053" />
+      <inertia
+        ixx="0.00277820257464213"
+        ixy="-9.75985448804179E-05"
+        ixz="-7.33382285987615E-06"
+        iyy="0.00139966144338352"
+        iyz="-2.64698296771601E-05"
+        izz="0.00195865346293585" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Hip Yaw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Hip Yaw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Hip Yaw"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Hip pitch motor inner" />
+    <child
+      link="Hip Yaw" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Hip Yaw motor outer">
+    <inertial>
+      <origin
+        xyz="5.55111512312578E-17 0.00924294771546275 -5.55111512312578E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.328670052016147" />
+      <inertia
+        ixx="0.000317459182853272"
+        ixy="2.57498015965307E-19"
+        ixz="1.25360876193636E-19"
+        iyy="0.000505904500163356"
+        iyz="-3.11708124589583E-19"
+        izz="0.000305337859651403" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Hip Yaw motor outer.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Hip Yaw motor outer.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Hip Yaw motor outer"
+    type="fixed">
+    <origin
+      xyz="0.0171499999999972 0.0784999999999992 0"
+      rpy="1.5707963267949 1.5707963267949 0" />
+    <parent
+      link="Hip Yaw" />
+    <child
+      link="Hip Yaw motor outer" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Hip yaw motor inner">
+    <inertial>
+      <origin
+        xyz="1.0547E-15 0.028322 -3.6082E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.091802" />
+      <inertia
+        ixx="3.3443E-05"
+        ixy="-8.9362E-19"
+        ixz="-3.1764E-21"
+        iyy="5.9314E-05"
+        iyz="9.9992E-19"
+        izz="3.3443E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Hip yaw motor inner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Hip yaw motor inner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Hip yaw motor inner"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-3.1416 1.0074 3.1416" />
+    <parent
+      link="Hip Yaw motor outer" />
+    <child
+      link="Hip yaw motor inner" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Leg part 1">
+    <inertial>
+      <origin
+        xyz="0.0760084684262597 0.0228490730772972 1.62919071011736E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.540915051298542" />
+      <inertia
+        ixx="0.00123063214283885"
+        ixy="0.000272316422423419"
+        ixz="-1.61613828290647E-10"
+        iyy="0.00142286241966032"
+        iyz="-3.93438405254598E-10"
+        izz="0.00111148936319682" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Leg part 1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Leg part 1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Leg part 1"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="3.14159265358979 -1.04719755119606 -3.14159265358979" />
+    <parent
+      link="Hip yaw motor inner" />
+    <child
+      link="Leg part 1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Leg part 2">
+    <inertial>
+      <origin
+        xyz="0.0578255555727301 -0.0450354041828799 2.10797886368574E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.262745719753957" />
+      <inertia
+        ixx="0.000243571020451167"
+        ixy="8.33501809311528E-07"
+        ixz="-1.92085126382818E-10"
+        iyy="0.000731108444438353"
+        iyz="1.67355344439881E-10"
+        izz="0.000504635321305178" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Leg part 2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Leg part 2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Leg part 2"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Leg part 1" />
+    <child
+      link="Leg part 2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Roll motor">
+    <inertial>
+      <origin
+        xyz="0 0.0092429477154627 -5.55111512312578E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.328670052016147" />
+      <inertia
+        ixx="0.000317459182853272"
+        ixy="-2.03287907341032E-20"
+        ixz="5.42101086242752E-20"
+        iyy="0.000505904500163356"
+        iyz="-1.49077798716757E-19"
+        izz="0.000305337859651403" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Roll motor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Roll motor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Roll motor"
+    type="fixed">
+    <origin
+      xyz="0.120700000000004 0.0171499999999935 0"
+      rpy="-1.63973684970919 1.57079631189374 3.07362698024244" />
+    <parent
+      link="Leg part 1" />
+    <child
+      link="Roll motor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Roll Motor inner">
+    <inertial>
+      <origin
+        xyz="1.52655665885959E-15 0.0283223407944095 -1.16573417585641E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.0918022748743475" />
+      <inertia
+        ixx="3.34428943026207E-05"
+        ixy="1.35525271560688E-20"
+        ixz="-1.6940658945086E-21"
+        iyy="5.93141739539541E-05"
+        iyz="-1.60406864386283E-18"
+        izz="3.34428943026207E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Roll Motor inner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Roll Motor inner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Roll Motor inner"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="3.1416 1.4275 3.1416" />
+    <parent
+      link="Roll motor" />
+    <child
+      link="Roll Motor inner" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Leg Part 3">
+    <inertial>
+      <origin
+        xyz="-0.0174753332909792 0.103502972859315 0.00123768702504001"
+        rpy="0 0 0" />
+      <mass
+        value="0.816474054918522" />
+      <inertia
+        ixx="0.00374492538479917"
+        ixy="0.00015329017896739"
+        ixz="-1.99783782687881E-06"
+        iyy="0.00235393040899868"
+        iyz="8.31112350352315E-05"
+        izz="0.00202320300841783" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Leg Part 3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Leg Part 3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Leg Part 3"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="-0.000162813414386833 1.57079630572147 0.00163025613643325" />
+    <parent
+      link="Roll Motor inner" />
+    <child
+      link="Leg Part 3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Knee motor">
+    <inertial>
+      <origin
+        xyz="-6.93889390390723E-17 0.00924294771546269 -5.55111512312578E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.328670052016148" />
+      <inertia
+        ixx="0.000317459182853272"
+        ixy="-1.28749007982654E-19"
+        ixz="1.35525271560688E-19"
+        iyy="0.000505904500163356"
+        iyz="-2.84603070277445E-19"
+        izz="0.000305337859651403" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Knee motor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Knee motor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Knee motor"
+    type="fixed">
+    <origin
+      xyz="-0.0161499999999908 0.163799999999998 0"
+      rpy="0 0 -1.57079632679495" />
+    <parent
+      link="Leg Part 3" />
+    <child
+      link="Knee motor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Knee motor inner">
+    <inertial>
+      <origin
+        xyz="-1.04083408558608E-16 0.0283223407944109 2.83106871279415E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.0918022748743476" />
+      <inertia
+        ixx="3.34428943026207E-05"
+        ixy="-1.07573184301296E-18"
+        ixz="7.6232965252887E-21"
+        iyy="5.93141739539543E-05"
+        iyz="-1.41454502191468E-19"
+        izz="3.34428943026207E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Knee motor inner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Knee motor inner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Knee motor inner"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-3.1416 -0.83649 -3.1416" />
+    <parent
+      link="Knee motor" />
+    <child
+      link="Knee motor inner" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Calf part 1">
+    <inertial>
+      <origin
+        xyz="0.0403185409990556 0.277457182391747 -6.36504435616581E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.735477747264155" />
+      <inertia
+        ixx="0.00397562663073378"
+        ixy="0.000106769703765355"
+        ixz="7.2556422881561E-10"
+        iyy="0.000950928737430629"
+        iyz="7.13882981870947E-09"
+        izz="0.00447560867117526" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Calf part 1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Calf part 1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Calf part 1"
+    type="fixed">
+    <origin
+      xyz="-0.0819000000000387 0.0161499999999921 -0.141854961139864"
+      rpy="2.09439510239348 0 1.57079632679491" />
+    <parent
+      link="Knee motor inner" />
+    <child
+      link="Calf part 1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Calf part 2">
+    <inertial>
+      <origin
+        xyz="-0.063343358350067 0.279640037659471 -0.000407127933592231"
+        rpy="0 0 0" />
+      <mass
+        value="0.385074416030336" />
+      <inertia
+        ixx="0.00235001963586068"
+        ixy="-4.51658740918972E-08"
+        ixz="-1.04124168789628E-09"
+        iyy="0.000186166283518885"
+        iyz="-3.85932808088359E-06"
+        izz="0.00218916394141296" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Calf part 2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Calf part 2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Calf part 2"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Calf part 1" />
+    <child
+      link="Calf part 2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Ankle motor inner">
+    <inertial>
+      <origin
+        xyz="-6.38378239159465E-16 -0.0125929752066115 2.22044604925031E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0237582944427728" />
+      <inertia
+        ixx="3.05006582205826E-06"
+        ixy="7.72917564369549E-21"
+        ixz="7.94093388050907E-23"
+        iyy="3.63308316598993E-06"
+        iyz="-2.02493813952981E-21"
+        izz="3.05006582205826E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Ankle motor inner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Ankle motor inner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Ankle motor inner"
+    type="fixed">
+    <origin
+      xyz="0.032750000000011 0.409799999999998 0"
+      rpy="0 1.18753441084705 -1.57079632679488" />
+    <parent
+      link="Calf part 1" />
+    <child
+      link="Ankle motor inner" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Ankle motor">
+    <inertial>
+      <origin
+        xyz="8.9259155622301E-12 -0.0354782628389086 6.10622663543836E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.115527563370422" />
+      <inertia
+        ixx="5.18726820441213E-05"
+        ixy="1.80694472378491E-14"
+        ixz="-1.19674362853892E-14"
+        iyy="4.93413872818119E-05"
+        iyz="-1.22819777351874E-20"
+        izz="5.08078658581416E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Ankle motor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Ankle motor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Ankle motor"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Ankle motor inner" />
+    <child
+      link="Ankle motor" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Ankle Front piece">
+    <inertial>
+      <origin
+        xyz="-0.0327088521977514 0.00434149109990345 -0.0333119075649137"
+        rpy="0 0 0" />
+      <mass
+        value="0.167371267242552" />
+      <inertia
+        ixx="0.000304102538057774"
+        ixy="8.04551409703367E-06"
+        ixz="-1.48453053270205E-05"
+        iyy="0.000131081863394562"
+        iyz="3.54233933895175E-05"
+        izz="0.000242178562403831" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Ankle Front piece.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Ankle Front piece.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Ankle Front piece"
+    type="fixed">
+    <origin
+      xyz="0 -0.0430591409176845 0.00962884919658258"
+      rpy="0 0 0" />
+    <parent
+      link="Ankle motor" />
+    <child
+      link="Ankle Front piece" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Foot motor fixed">
+    <inertial>
+      <origin
+        xyz="-3.56081830688026E-12 -0.0354782628389087 8.18561884941005E-12"
+        rpy="0 0 0" />
+      <mass
+        value="0.115527563370422" />
+      <inertia
+        ixx="5.09773084395832E-05"
+        ixy="-7.2080703866328E-15"
+        ixz="-3.89505346442915E-07"
+        iyy="4.93413872818119E-05"
+        iyz="1.6569508589357E-14"
+        izz="5.17032394626797E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Foot motor fixed.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Foot motor fixed.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Foot motor fixed"
+    type="fixed">
+    <origin
+      xyz="-0.0384999999999999 0.00750914091768246 -0.0811788491965833"
+      rpy="0 0.410326910493012 1.5707963267949" />
+    <parent
+      link="Ankle Front piece" />
+    <child
+      link="Foot motor fixed" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Foot motor inner">
+    <inertial>
+      <origin
+        xyz="7.7715611723761E-16 -0.0125929752066116 1.94289029309402E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0237582944427728" />
+      <inertia
+        ixx="3.05006582205825E-06"
+        ixy="-3.70576914423756E-22"
+        ixz="-3.04402465419514E-22"
+        iyy="3.63308316598992E-06"
+        iyz="-5.82335151237331E-22"
+        izz="3.05006582205825E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Foot motor inner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Foot motor inner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Foot motor inner"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Foot motor fixed" />
+    <child
+      link="Foot motor inner" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Foot">
+    <inertial>
+      <origin
+        xyz="6.78902952744309E-08 -0.00932810386426246 0.0141131321515618"
+        rpy="0 0 0" />
+      <mass
+        value="0.497433402310296" />
+      <inertia
+        ixx="0.00208450646855265"
+        ixy="-9.9742724978891E-10"
+        ixz="9.19352425161587E-10"
+        iyy="0.000401222572580994"
+        iyz="7.44217429429093E-05"
+        izz="0.00233321507669035" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Foot.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Foot.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Foot"
+    type="fixed">
+    <origin
+      xyz="0.0103955845408884 -0.00699999999999942 -0.0489073800366903"
+      rpy="0 -0.209439510239319 0" />
+    <parent
+      link="Foot motor inner" />
+    <child
+      link="Foot" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Right sole">
+    <inertial>
+      <origin
+        xyz="-2.22044604925031E-16 -0.00323007879506478 -0.00224999999999981"
+        rpy="0 0 0" />
+      <mass
+        value="0.0969331837999621" />
+      <inertia
+        ixx="0.000382491157944208"
+        ixy="-4.91279109407494E-19"
+        ixz="4.91279109407494E-20"
+        iyy="7.53943146226387E-05"
+        iyz="5.6327690992411E-19"
+        izz="0.000457558323071522" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Right sole.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Right sole.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right sole"
+    type="fixed">
+    <origin
+      xyz="0 0 -0.00449999999999995"
+      rpy="-3.14159265358979 0 -3.14159265358979" />
+    <parent
+      link="Foot" />
+    <child
+      link="Right sole" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Ankle part 2">
+    <inertial>
+      <origin
+        xyz="0.0342225481642913 0.00480875742172515 -0.0398221552006379"
+        rpy="0 0 0" />
+      <mass
+        value="0.193732633774825" />
+      <inertia
+        ixx="0.000364750131712395"
+        ixy="-8.95501725742529E-06"
+        ixz="2.7232009843368E-05"
+        iyy="0.000186262411486356"
+        iyz="3.83907256159566E-05"
+        izz="0.000255062214130275" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Ankle part 2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Ankle part 2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Ankle part 2"
+    type="fixed">
+    <origin
+      xyz="0 -0.0430591409176845 0.00962884919658258"
+      rpy="0 0 0" />
+    <parent
+      link="Ankle motor" />
+    <child
+      link="Ankle part 2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left Hip">
+    <inertial>
+      <origin
+        xyz="0.0209986703587994 1.3236080004253E-07 0.0519758202250817"
+        rpy="0 0 0" />
+      <mass
+        value="0.741275708945045" />
+      <inertia
+        ixx="0.00341640501294073"
+        ixy="-3.16297825496241E-10"
+        ixz="-0.000320510869161967"
+        iyy="0.00196502830150314"
+        iyz="-8.71342509077685E-10"
+        izz="0.00199801103293575" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left Hip.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 0.5" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left Hip.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left Hip"
+    type="fixed">
+    <origin
+      xyz="-0.139100001291601 0.101976575647447 0.351302543997981"
+      rpy="0.201629400197844 0.846169326575797 0.480350899845249" />
+    <parent
+      link="Hip Part 1" />
+    <child
+      link="Left Hip" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left Hip pitch motor">
+    <inertial>
+      <origin
+        xyz="0.00478906667199999 0.0316023019193429 -0.000615128960093303"
+        rpy="0 0 0" />
+      <mass
+        value="0.595660024083284" />
+      <inertia
+        ixx="0.000687314646842304"
+        ixy="-1.61199233004105E-08"
+        ixz="1.36988790820083E-09"
+        iyy="0.00113330157177616"
+        iyz="-2.68741083788535E-07"
+        izz="0.000703021735329817" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left Hip pitch motor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.796078431372549 0.823529411764706 0.937254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left Hip pitch motor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left Hip pitch motor"
+    type="fixed">
+    <origin
+      xyz="0.0675000000000002 -0.00478815233439742 0.000630372213646285"
+      rpy="0 0 1.5707963267949" />
+    <parent
+      link="Left Hip" />
+    <child
+      link="Left Hip pitch motor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left hip pitch motor inner">
+    <inertial>
+      <origin
+        xyz="0.00478815233439653 0.0121410289179667 -0.000630372213650421"
+        rpy="0 0 0" />
+      <mass
+        value="0.0672931502593424" />
+      <inertia
+        ixx="1.88421375460619E-05"
+        ixy="-4.2351647362715E-21"
+        ixz="1.90582413132218E-21"
+        iyy="3.22798842131266E-05"
+        iyz="-6.51156578201743E-21"
+        izz="1.88421375460619E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left hip pitch motor inner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left hip pitch motor inner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left hip pitch motor inner"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Left Hip pitch motor" />
+    <child
+      link="Left hip pitch motor inner" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Left Hip yaw">
+    <inertial>
+      <origin
+        xyz="0.0120626039843999 -0.0638114675486028 -0.00051761268009537"
+        rpy="0 0 0" />
+      <mass
+        value="0.658014497521925" />
+      <inertia
+        ixx="0.00277816793045754"
+        ixy="9.75928573969089E-05"
+        ixz="-7.30676453954162E-06"
+        iyy="0.00139961445510798"
+        iyz="2.64606367956315E-05"
+        izz="0.0019586271242059" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left Hip yaw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left Hip yaw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left Hip yaw"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Left hip pitch motor inner" />
+    <child
+      link="Left Hip yaw" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left hip yaw motor">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 0.00924294771546269 -2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.328670052016147" />
+      <inertia
+        ixx="0.000317459182853272"
+        ixy="3.3881317890172E-21"
+        ixz="6.7762635780344E-21"
+        iyy="0.000505904500163356"
+        iyz="2.71050543121376E-20"
+        izz="0.000305337859651403" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left hip yaw motor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left hip yaw motor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left hip yaw motor"
+    type="fixed">
+    <origin
+      xyz="0.0171499999999998 -0.078500000000001 0"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="Left Hip yaw" />
+    <child
+      link="Left hip yaw motor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left hip yaw motor inner">
+    <inertial>
+      <origin
+        xyz="-5.19029264012261E-15 0.0283223407944087 -1.57374113740616E-14"
+        rpy="0 0 0" />
+      <mass
+        value="0.0918022748743475" />
+      <inertia
+        ixx="3.34428943026207E-05"
+        ixy="1.90582413132218E-19"
+        ixz="-2.43521972335611E-21"
+        iyy="5.93141739539542E-05"
+        iyz="2.31345873718831E-20"
+        izz="3.34428943026207E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left hip yaw motor inner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left hip yaw motor inner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left hip yaw motor inner"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 -1.0402 0" />
+    <parent
+      link="Left hip yaw motor" />
+    <child
+      link="Left hip yaw motor inner" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Left leg part 1">
+    <inertial>
+      <origin
+        xyz="0.0760084689203238 0.0228490734865082 1.88780879262218E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.540915041847393" />
+      <inertia
+        ixx="0.00123063209088574"
+        ixy="0.000272316409732004"
+        ixz="-1.5935221756502E-10"
+        iyy="0.001422862353672"
+        iyz="-4.10036337078045E-10"
+        izz="0.0011114893888176" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left leg part 1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left leg part 1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left leg part 1"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="3.14159265358979 -1.04719755119378 3.14159265358979" />
+    <parent
+      link="Left hip yaw motor inner" />
+    <child
+      link="Left leg part 1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left Leg part 2">
+    <inertial>
+      <origin
+        xyz="0.057825553920377 -0.0450354050432732 2.46497826317249E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.262745701721565" />
+      <inertia
+        ixx="0.000243570943304837"
+        ixy="8.33508394936254E-07"
+        ixz="-2.21208209347024E-10"
+        iyy="0.000731108346246248"
+        iyz="1.62290251346669E-10"
+        izz="0.000504635317723863" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left Leg part 2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left Leg part 2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left Leg part 2"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Left leg part 1" />
+    <child
+      link="Left Leg part 2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left roll motor">
+    <inertial>
+      <origin
+        xyz="-1.0547118733939E-14 0.00920073519476089 0.00371847278924167"
+        rpy="0 0 0" />
+      <mass
+        value="0.328670052016147" />
+      <inertia
+        ixx="0.000317459182853272"
+        ixy="1.84653182501437E-19"
+        ixz="0"
+        iyy="0.000505904500163356"
+        iyz="-6.09863722023096E-20"
+        izz="0.000305337859651403" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left roll motor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left roll motor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left roll motor"
+    type="fixed">
+    <origin
+      xyz="0.120742212520693 0.0208684727892407 0"
+      rpy="1.57079632679488 1.5707963267949 0" />
+    <parent
+      link="Left leg part 1" />
+    <child
+      link="Left roll motor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left roll motor inner">
+    <inertial>
+      <origin
+        xyz="-9.10382880192628E-15 0.0282801282737109 0.00371847278924181"
+        rpy="0 0 0" />
+      <mass
+        value="0.0918022748743476" />
+      <inertia
+        ixx="3.34428943026207E-05"
+        ixy="1.28389018980071E-18"
+        ixz="-3.3881317890172E-21"
+        iyy="5.93141739539542E-05"
+        iyz="9.3173624197973E-21"
+        izz="3.34428943026207E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left roll motor inner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left roll motor inner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left roll motor inner"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Left roll motor" />
+    <child
+      link="Left roll motor inner" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Left leg part 3">
+    <inertial>
+      <origin
+        xyz="-0.0802246670610873 0.103502956401957 0.00123769416444014"
+        rpy="0 0 0" />
+      <mass
+        value="0.816473977031018" />
+      <inertia
+        ixx="0.00374492495093042"
+        ixy="-0.000153290007951134"
+        ixz="1.99759691513993E-06"
+        iyy="0.0023539301993161"
+        iyz="8.31112816771505E-05"
+        izz="0.00202320257225944" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left leg part 3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left leg part 3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left leg part 3"
+    type="fixed">
+    <origin
+      xyz="-0.0977000000000131 -4.22125206961076E-05 0.00371847278924378"
+      rpy="-3.14159265358979 0 3.14159265358974" />
+    <parent
+      link="Left roll motor inner" />
+    <child
+      link="Left leg part 3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left knee motor">
+    <inertial>
+      <origin
+        xyz="-2.77555756156289E-17 0.00924294771546275 -5.55111512312578E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.328670052016148" />
+      <inertia
+        ixx="0.000317459182853272"
+        ixy="-3.89635155736978E-20"
+        ixz="6.7762635780344E-21"
+        iyy="0.000505904500163356"
+        iyz="-1.49077798716757E-19"
+        izz="0.000305337859651403" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left knee motor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left knee motor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left knee motor"
+    type="fixed">
+    <origin
+      xyz="-0.0815499999999977 0.163799999999999 0"
+      rpy="-3.14159265358979 0 -1.57079632679492" />
+    <parent
+      link="Left leg part 3" />
+    <child
+      link="Left knee motor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left knee motor inner">
+    <inertial>
+      <origin
+        xyz="2.22044604925031E-16 0.0283223407944113 -2.98372437868011E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0918022748743476" />
+      <inertia
+        ixx="3.34428943026207E-05"
+        ixy="6.43745039913268E-20"
+        ixz="6.7762635780344E-21"
+        iyy="5.93141739539542E-05"
+        iyz="-2.59192081859816E-19"
+        izz="3.34428943026207E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left knee motor inner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left knee motor inner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left knee motor inner"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-3.1416 -1.0699 -3.1416" />
+    <parent
+      link="Left knee motor" />
+    <child
+      link="Left knee motor inner" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Left calf part 1">
+    <inertial>
+      <origin
+        xyz="0.0403185419434275 0.27745718700898 -6.56654274844293E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.735477788994157" />
+      <inertia
+        ixx="0.00397562697102234"
+        ixy="0.000106769694086435"
+        ixz="7.44598228560878E-10"
+        iyy="0.000950928778002477"
+        iyz="7.36691231597501E-09"
+        izz="0.00447560899841427" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left calf part 1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left calf part 1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left calf part 1"
+    type="fixed">
+    <origin
+      xyz="-0.0818999999999982 0.016150000000012 -0.14185496113989"
+      rpy="2.09439510239319 0 1.5707963267949" />
+    <parent
+      link="Left knee motor inner" />
+    <child
+      link="Left calf part 1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left calf part 2">
+    <inertial>
+      <origin
+        xyz="-0.0633433583500932 0.279640037659467 -0.000407127933592183"
+        rpy="0 0 0" />
+      <mass
+        value="0.385074416030337" />
+      <inertia
+        ixx="0.00235001963586068"
+        ixy="-4.51658740950605E-08"
+        ixz="-1.04124168711023E-09"
+        iyy="0.000186166283518895"
+        iyz="-3.85932808087632E-06"
+        izz="0.00218916394141298" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left calf part 2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left calf part 2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left calf part 2"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Left calf part 1" />
+    <child
+      link="Left calf part 2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left Ankle motor inner">
+    <inertial>
+      <origin
+        xyz="-8.04911692853238E-16 -0.0125929752066116 1.60982338570648E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.0237582944427728" />
+      <inertia
+        ixx="3.05006582205826E-06"
+        ixy="1.59877468794249E-20"
+        ixz="-2.64697796016969E-22"
+        iyy="3.63308316598993E-06"
+        iyz="-3.12343399300023E-21"
+        izz="3.05006582205826E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/left Ankle motor inner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/left Ankle motor inner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left Ankle motor inner"
+    type="fixed">
+    <origin
+      xyz="0.0327499999999637 0.409799999999996 0"
+      rpy="3.14159265358966 1.3309927573675 1.57079632679476" />
+    <parent
+      link="Left calf part 1" />
+    <child
+      link="left Ankle motor inner" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left Ankle motor outer">
+    <inertial>
+      <origin
+        xyz="8.92524942841533E-12 -0.035478262838908 1.27675647831893E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.115527563370422" />
+      <inertia
+        ixx="5.18726820441213E-05"
+        ixy="1.80694472378491E-14"
+        ixz="-1.19674333207739E-14"
+        iyy="4.93413872818118E-05"
+        iyz="8.25857123572943E-21"
+        izz="5.08078658581416E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/left Ankle motor outer.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/left Ankle motor outer.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left Ankle motor outer"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="left Ankle motor inner" />
+    <child
+      link="left Ankle motor outer" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Left ankle front">
+    <inertial>
+      <origin
+        xyz="0.0327087817326386 -0.0387174986333824 -0.0236829136831664"
+        rpy="0 0 0" />
+      <mass
+        value="0.167371771581247" />
+      <inertia
+        ixx="0.00030410284370081"
+        ixy="-8.0450448491692E-06"
+        ixz="1.48449156807221E-05"
+        iyy="0.000131080617236552"
+        iyz="3.54225521570679E-05"
+        izz="0.00024217971411776" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left ankle front.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left ankle front.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left ankle front"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="left Ankle motor outer" />
+    <child
+      link="Left ankle front" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left ankle rear">
+    <inertial>
+      <origin
+        xyz="-0.0372818836871942 -0.00282866748934965 -0.0336868288028511"
+        rpy="0 0 0" />
+      <mass
+        value="0.193733122191578" />
+      <inertia
+        ixx="0.000364750644161343"
+        ixy="8.95494265332509E-06"
+        ixz="-2.7232056371646E-05"
+        iyy="0.000186262706062205"
+        iyz="3.83909658910462E-05"
+        izz="0.000255062646767532" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left ankle rear.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left ankle rear.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left ankle rear"
+    type="fixed">
+    <origin
+      xyz="0.00305934761501765 -0.035421710428506 0.00349351391752167"
+      rpy="0 0 0" />
+    <parent
+      link="Left ankle front" />
+    <child
+      link="Left ankle rear" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left foot motor">
+    <inertial>
+      <origin
+        xyz="-2.89679391585196E-12 0.00758087807877614 -0.00962884918813889"
+        rpy="0 0 0" />
+      <mass
+        value="0.115527563370422" />
+      <inertia
+        ixx="5.09199798707683E-05"
+        ixy="-5.86327217517741E-15"
+        ixz="-3.26819925177112E-07"
+        iyy="4.93413872818119E-05"
+        iyz="1.70918475499073E-14"
+        izz="5.17605680314946E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left foot motor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left foot motor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left foot motor"
+    type="fixed">
+    <origin
+      xyz="-0.00455914091768816 -0.0386744028510256 -0.0624421548281155"
+      rpy="0 0.330465648981227 -1.57079632679488" />
+    <parent
+      link="Left ankle front" />
+    <child
+      link="Left foot motor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left foot motor inner">
+    <inertial>
+      <origin
+        xyz="5.55111512312578E-17 0.0304661657110724 -0.00962884919658197"
+        rpy="0 0 0" />
+      <mass
+        value="0.0237582944427728" />
+      <inertia
+        ixx="3.05006582205826E-06"
+        ixy="-4.2351647362715E-22"
+        ixz="1.98523347012727E-22"
+        iyy="3.63308316598993E-06"
+        iyz="6.88214269644119E-22"
+        izz="3.05006582205826E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left foot motor inner.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left foot motor inner.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left foot motor inner"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Left foot motor" />
+    <child
+      link="Left foot motor inner" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Left foot">
+    <inertial>
+      <origin
+        xyz="6.42654709170909E-08 -0.00932802151650092 0.0141131216629911"
+        rpy="0 0 0" />
+      <mass
+        value="0.497432743354586" />
+      <inertia
+        ixx="0.00208450349228095"
+        ixy="-9.41604960506565E-10"
+        ixz="7.64497867910955E-10"
+        iyy="0.000401222908187328"
+        iyz="7.4421442278053E-05"
+        izz="0.00233321247376446" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left foot.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left foot.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left foot"
+    type="fixed">
+    <origin
+      xyz="0.0103955845408886 0.0360591409176837 -0.0585362292332718"
+      rpy="0 -0.209439510239316 0" />
+    <parent
+      link="Left foot motor inner" />
+    <child
+      link="Left foot" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left sole">
+    <inertial>
+      <origin
+        xyz="0 -0.00323007879506461 -0.00224999999999986"
+        rpy="0 0 0" />
+      <mass
+        value="0.0969331837999618" />
+      <inertia
+        ixx="0.000382491157944206"
+        ixy="-2.98155597433514E-19"
+        ixz="-8.32633387150977E-19"
+        iyy="7.53943146226386E-05"
+        iyz="2.56820389607504E-18"
+        izz="0.00045755832307152" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left sole.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lowerlegsurdf9.SLDASM/meshes/Left sole.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left sole"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Left foot" />
+    <child
+      link="Left sole" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
